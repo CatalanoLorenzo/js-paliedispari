@@ -1,23 +1,38 @@
 
 /* Palidroma
 Chiedere all’utente di inserire una parola Creare una funzione per capire se la parola inserita è palindroma  */
-
-//inserimento parola da parte dell'utente
-const user_word = prompt('scegli una parola !')
-//scomporre la strinca in un arrei
-const user_word_split = user_word.split('')
-console.log(user_word_split)
-//invertire l'orndine di lettura dell'array
-const invers_user_word_split = user_word_split.reverse('')
-console.log(invers_user_word_split)
-const invers_user_word = invers_user_word_split.join('')
-
-// confrontarla con la parola inserita  se è uguale allora è un palindromo
-if(invers_user_word == user_word){
-    console.log('è un palindromo')
-}else{
-    console.log('non è un palindromo')
+function pali(user_word) {
+    //scomporre la strinca in un arrei
+    const user_word_split = user_word.split('')
+    console.log(user_word_split)
+    //invertire l'orndine di lettura dell'array
+    const invers_user_word_split = user_word_split.reverse('')
+    console.log(invers_user_word_split)
+    const invers_user_word = invers_user_word_split.join('')
+    console.log(invers_user_word);
+    console.log(user_word);
+    // confrontarla con la parola inserita  se è uguale allora è un palindromo
+    if (user_word == invers_user_word) {
+        return result = true;
+    } else if (user_word != invers_user_word) {
+        return result = false;
+    }
 }
+//-------------END MAKE FUNCTION------------------
+let next = true
+//inserimento parola da parte dell'utente
+while (next) {
+    const user_word = prompt('scegli una parola !')
+pali(user_word)
+console.log(pali.value)
+if (result) {
+    console.log('é un palindromo');
+} else {
+    console.log('non è un palindromo');
+}
+next = confirm('vuoi continuare?')
+}
+//-------------MAKE FUNCTION----------------------
 
 /*Pari e Dispari
 L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
