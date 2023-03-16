@@ -63,7 +63,7 @@ L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 let chois_user = prompt('Pari o Dispari?').toLowerCase()
 console.log(chois_user)
 pari_o_dispari(chois_user)
-
+let result_valid_chois = pari_o_dispari(chois_user)
 //l'utente sceglie un numero
 const number_user = (Number(prompt('Scegli un numero da 1 a 5')))
 console.log(number_user)
@@ -83,7 +83,7 @@ if (total_number % 2 == 0) {
 }
 
 //confrontare con la scelta dell'utente
-if (pari_o_dispari = pari) {
+if (result_valid_chois == pari) {
     console.log(' Baravo hai vinto ')
 } else {
     console.log('Hai perso ');
