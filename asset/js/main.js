@@ -67,5 +67,6 @@ if(number_user<= 5 && number_user >= 1){
 const number_cpu = Math.round((Math.random() * 4 )+ 1)
 console.log(number_cpu)
 // Somma del numero utente con quello della CPU
+const total_number = number_cpu + number_user
 //verificare se il risultato è pari o dispari 
 //confrontare con la scelta dell'utente
