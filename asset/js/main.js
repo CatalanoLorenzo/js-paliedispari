@@ -1,7 +1,7 @@
 
 /* Palidroma
 Chiedere all’utente di inserire una parola Creare una funzione per capire se la parola inserita è palindroma  */
-function pali(user_word) {
+/* function pali(user_word) {
     //scomporre la strinca in un arrei
     const user_word_split = user_word.split('')
     console.log(user_word_split)
@@ -33,9 +33,17 @@ if (result) {
 next = confirm('vuoi continuare?')
 }
 //-------------MAKE FUNCTION----------------------
-
+ */
 /*Pari e Dispari
 L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
  Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
   Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione) Dichiariamo chi ha vinto.
  */
+//l'utente sceglie pario o dispari
+const chois_user = (prompt('Pari o Dispari?')).toLowerCase
+console.log(chois_user)
+//l'utente sceglie un numero
+//la CPU sceglie un numero random
+// Somma del numero utente con quello della CPU
+//verificare se il risultato è pari o dispari 
+//confrontare con la scelta dell'utente
