@@ -8,12 +8,16 @@ const user_word = prompt('scegli una parola !')
 const user_word_split = user_word.split('')
 console.log(user_word_split)
 //invertire l'orndine di lettura dell'array
-
-//creare una nuova parrola con l'array invertito 
+const invers_user_word_split = user_word_split.reverse('')
+console.log(invers_user_word_split)
+const invers_user_word = invers_user_word_split.join('')
 
 // confrontarla con la parola inserita  se è uguale allora è un palindromo
-
-
+if(invers_user_word == user_word){
+    console.log('è un palindromo')
+}else{
+    console.log('non è un palindromo')
+}
 
 /*Pari e Dispari
 L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
