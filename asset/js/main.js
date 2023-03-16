@@ -54,11 +54,10 @@ if(chois_user == 'pari'){
 //l'utente sceglie un numero
 const number_user = (Number(prompt('Scegli un numero da 1 a 5')))
 console.log(number_user)
-let valid_number
 if(number_user<= 5 && number_user >= 1){
-    valid_number = true
+
+
 }else{
-    valid_number = false
     alert('Il numero che hai scelto non è compreso tra 1 e 5 o non è un numero !!!!!!!!!!!!!')
     number_user = (Number(prompt('Scegli un numero da 1 a 5')))
 }
@@ -69,4 +68,16 @@ console.log(number_cpu)
 // Somma del numero utente con quello della CPU
 const total_number = number_cpu + number_user
 //verificare se il risultato è pari o dispari 
+let pari
+if(total_number % 2 == 0){
+    pari = true
+}else{
+    pari = false
+}
+ 
 //confrontare con la scelta dell'utente
+if(valid_chois = pari){
+    console.log(' Baravo hai vinto ')
+}else{
+    console.log('Hai perso ');
+}
